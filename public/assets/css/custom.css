@@ -1,0 +1,79 @@
+.jk input[type="radio"] {
+    display: none;
+}
+.jk input[type="radio"] + label:before {
+    background-color: #202940;
+    border: 2px solid #fff;
+    content: "";
+    display: inline-block;
+    font-size: 35px;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    line-height: 15px;
+    margin: 5px 10px 0 1px;
+    vertical-align: middle;
+    text-align: center;
+}
+.jk input[type="radio"]:checked + label:before {
+    content: "\2022";
+    color: #913f9e;
+}
+
+.card .form-check {
+    margin-top: 15px;
+    margin-left: -27px;
+}
+
+.form-group input[type=file] {
+    position: relative;
+    opacity: 1;
+    z-index: 0;
+}
+
+.dark-edition .text-muted{
+    color: red !important;
+}
+
+option{
+    background-color:  #202940;
+}
+
+.sidebar {
+    margin-left:-20px;
+    width: 250px;
+    transition: left 0.3s ease-in-out;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+  }
+
+  .sidebar.hidden {
+    left: -1000px; /* Move sidebar out of view */
+  }
+
+  .main-panel {
+    transition: margin 0.3s ease;
+  }
+
+  @media (max-width: 768px) {
+    .sidebar {
+      left: -250px;
+    }
+    .sidebar.open {
+      left: 0;
+    }
+  }
+
+  .logout-button {
+    position: fixed;
+    top: 10px; /* Adjust top position as needed */
+    right: 20px; /* Adjust right position as needed */
+  }
+  
+  .logout-link {
+    color: white; /* Adjust text color as needed */
+    text-decoration: none; /* Remove underline */
+  }
